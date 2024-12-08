@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pride's Delicious Popcorn Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Pride's Delicious Popcorn Shop</h1>
+      <p>Fresh popcorn, kasi style!</p>
+    </header>
+    <main>
+      <form id="orderForm">
+        <h2>Order Your Popcorn</h2>
+        <label for="size">Select Size:</label>
+        <select id="size" name="size" required>
+          <option value="small">Small (R10)</option>
+          <option value="medium">Medium (R20)</option>
+          <option value="large">Large (R30)</option>
+        </select>
+        <label for="flavor">Select Flavor:</label>
+        <select id="flavor" name="flavor" required>
+          <option value="salted">Salted</option>
+          <option value="butter">Butter</option>
+          <option value="caramel">Caramel</option>
+        </select>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+        <button type="submit">Place Order</button>
+      </form>
+      <div id="confirmationMessage" class="hidden"></div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Pride's Delicious Popcorn Shop</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
